@@ -10,3 +10,61 @@ type Post @model {
   image: String
 }
 
+type Vehicles {
+  CommStatus: String
+  Destination: String
+  Heading: Int
+  LastStop: String
+  OccupancyStatus: Int
+  DriverName: String
+  DisplayStatus: String
+  Latitude: Float
+  BlockFareboxId: Int
+  SeatingCapacity: Int
+  Direction: String
+  TripId: Int
+  Name: String
+  TotalCapacity: Int
+  LastUpdated: String
+  RunId: Int
+  OccupancyStatusReportLabel: String
+  Speed: String
+  PropertyName: String
+  StopId: Int
+  CurrentStatus: String
+  VehicleId: Int
+  RouteId: Int
+  GPSStatus: Int
+  Longitude: Float
+  OnBoard: Int
+  OpStatus: String
+  Deviation: Int
+  DirectionLong: String
+}
+
+type Lines @model {
+  RouteId: ID!
+  ShortName: String
+  IvrDescription: String
+  Directions: String
+  TextColor: String
+  IsHeadwayMonitored: Boolean
+  DetourActiveMessageCount: Int
+  GoogleDescription: String
+  Group: String
+  SortOrder: Int
+  Stops: String
+  IsHeadway: Boolean
+  RouteTraceHash64: String
+  RouteRecordId: Int
+  RouteAbbreviation: String
+  IsVisible: Boolean
+  Color: String
+  IncludeInGoogle: Boolean
+  RouteTraceFilename: String
+  RouteStops: String
+  LongName: String
+  Messages: [String]
+  Vehicles: [Vehicles]
+}
+

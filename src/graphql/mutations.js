@@ -49,3 +49,198 @@ export const deletePost = /* GraphQL */ `
     }
   }
 `;
+export const createLines = /* GraphQL */ `
+  mutation CreateLines(
+    $input: CreateLinesInput!
+    $condition: ModelLinesConditionInput
+  ) {
+    createLines(input: $input, condition: $condition) {
+      RouteId
+      ShortName
+      IvrDescription
+      Directions
+      TextColor
+      IsHeadwayMonitored
+      DetourActiveMessageCount
+      GoogleDescription
+      Group
+      SortOrder
+      Stops
+      IsHeadway
+      RouteTraceHash64
+      RouteRecordId
+      RouteAbbreviation
+      IsVisible
+      Color
+      IncludeInGoogle
+      RouteTraceFilename
+      RouteStops
+      LongName
+      Messages
+      Vehicles {
+        CommStatus
+        Destination
+        Heading
+        LastStop
+        OccupancyStatus
+        DriverName
+        DisplayStatus
+        Latitude
+        BlockFareboxId
+        SeatingCapacity
+        Direction
+        TripId
+        Name
+        TotalCapacity
+        LastUpdated
+        RunId
+        OccupancyStatusReportLabel
+        Speed
+        PropertyName
+        StopId
+        CurrentStatus
+        VehicleId
+        RouteId
+        GPSStatus
+        Longitude
+        OnBoard
+        OpStatus
+        Deviation
+        DirectionLong
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateLines = /* GraphQL */ `
+  mutation UpdateLines(
+    $input: UpdateLinesInput!
+    $condition: ModelLinesConditionInput
+  ) {
+    updateLines(input: $input, condition: $condition) {
+      RouteId
+      ShortName
+      IvrDescription
+      Directions
+      TextColor
+      IsHeadwayMonitored
+      DetourActiveMessageCount
+      GoogleDescription
+      Group
+      SortOrder
+      Stops
+      IsHeadway
+      RouteTraceHash64
+      RouteRecordId
+      RouteAbbreviation
+      IsVisible
+      Color
+      IncludeInGoogle
+      RouteTraceFilename
+      RouteStops
+      LongName
+      Messages
+      Vehicles {
+        CommStatus
+        Destination
+        Heading
+        LastStop
+        OccupancyStatus
+        DriverName
+        DisplayStatus
+        Latitude
+        BlockFareboxId
+        SeatingCapacity
+        Direction
+        TripId
+        Name
+        TotalCapacity
+        LastUpdated
+        RunId
+        OccupancyStatusReportLabel
+        Speed
+        PropertyName
+        StopId
+        CurrentStatus
+        VehicleId
+        RouteId
+        GPSStatus
+        Longitude
+        OnBoard
+        OpStatus
+        Deviation
+        DirectionLong
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteLines = /* GraphQL */ `
+  mutation DeleteLines(
+    $input: DeleteLinesInput!
+    $condition: ModelLinesConditionInput
+  ) {
+    deleteLines(input: $input, condition: $condition) {
+      RouteId
+      ShortName
+      IvrDescription
+      Directions
+      TextColor
+      IsHeadwayMonitored
+      DetourActiveMessageCount
+      GoogleDescription
+      Group
+      SortOrder
+      Stops
+      IsHeadway
+      RouteTraceHash64
+      RouteRecordId
+      RouteAbbreviation
+      IsVisible
+      Color
+      IncludeInGoogle
+      RouteTraceFilename
+      RouteStops
+      LongName
+      Messages
+      Vehicles {
+        CommStatus
+        Destination
+        Heading
+        LastStop
+        OccupancyStatus
+        DriverName
+        DisplayStatus
+        Latitude
+        BlockFareboxId
+        SeatingCapacity
+        Direction
+        TripId
+        Name
+        TotalCapacity
+        LastUpdated
+        RunId
+        OccupancyStatusReportLabel
+        Speed
+        PropertyName
+        StopId
+        CurrentStatus
+        VehicleId
+        RouteId
+        GPSStatus
+        Longitude
+        OnBoard
+        OpStatus
+        Deviation
+        DirectionLong
+      }
+      id
+      createdAt
+      updatedAt
+    }
+  }
+`;
